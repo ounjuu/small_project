@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Chart</title>
+  </head>
+  <body>
+    <div class="chart-wrap">
+      <div>
+        <div><h2>아이엠파인 SD팀 지원자 김은주</h2></div>
+        <!-- 그래프 -->
+        <div class="chart-title">1. 그래프</div>
+
+        <!-- 값 편집 -->
+        <div class="chart-title">
+          2. 값 편집<br />
+          <table>
+            <thead>
+              <tr class="chart-thead">
+                <th class="chart-thead-id">id</th>
+                <th class="chart-thead-value">value</th>
+                <th class="chart-thead-edit">edit</th>
+              </tr>
+            </thead>
+            <tbody class="chart-tbody"></tbody>
+          </table>
+        </div>
+
+        <!-- 값 추가 input -->
+        <div class="chart-title">
+          3. 값 추가<br />
+          <div class="chart-input-wrap">
+            <input type="number" id="chart-input1" placeholder="ID" />
+            <input type="number" id="chart-input2" placeholder="VALUE" />
+            <button id="submit" onclick="save()">추가</button>
+          </div>
+          <p>숫자만 입력하세요.</p>
+        </div>
+
+        <!-- 값 textarea 편집 -->
+        <div class="chart-title">
+          4. 값 고급 편집
+          <br />
+          <textarea
+            id="chart-textarea"
+            rows="5"
+            cols="30"
+            placeholder=""
+          ></textarea>
+          <button id="update-textarea">수정</button>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

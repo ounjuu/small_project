@@ -1,0 +1,102 @@
+p {
+  margin: 0;
+}
+
+/* 차트 전체 */
+.chart-wrap {
+  max-width: 1280px;
+  padding: 25px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 테이블 */
+table {
+  width: 100%;
+}
+thead {
+  width: 100%;
+}
+tbody {
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+/* 테이블 제목 */
+.chart-thead {
+  width: 100%;
+  .chart-thead-id {
+    width: 10%;
+  }
+  .chart-thead-value {
+    width: 60%;
+  }
+  .chart-thead-edit {
+    width: 30%;
+  }
+}
+
+/* 제목 */
+div h2 {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.chart-title {
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  p {
+    font-size: 11px;
+    color: gray;
+    font-weight: lighter;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+}
+
+/* 버튼 */
+button {
+  all: unset;
+  padding: 6px 15px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #868686;
+  color: black;
+}
+/* input */
+.chart-input-wrap {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+}
+input {
+  height: 30px;
+  padding: 6px 10px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  margin-right: 8px;
+  box-sizing: border-box;
+}
+
+/* 수정 삭제 버튼 */
+.chart-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
