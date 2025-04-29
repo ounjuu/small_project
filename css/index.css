@@ -11,9 +11,15 @@ p {
   justify-content: center;
 }
 
+.chart-width {
+  width: 65%;
+}
+
 /* 테이블 */
 table {
   width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 thead {
   width: 100%;
@@ -28,6 +34,7 @@ tbody {
   width: 100%;
   .chart-thead-id {
     width: 10%;
+    padding: 10px 0px;
   }
   .chart-thead-value {
     width: 60%;
@@ -55,9 +62,14 @@ div h2 {
     font-weight: lighter;
     padding-bottom: 10px;
     padding-left: 15px;
+    margin-bottom: 50px;
   }
 }
 
+.tdsize3 div {
+  display: flex;
+  justify-content: center;
+}
 /* 버튼 */
 button {
   all: unset;
@@ -78,9 +90,11 @@ button:hover {
 .chart-input-wrap {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 10px 12px;
 }
 input {
+  width: 45%;
   height: 30px;
   padding: 6px 10px;
   font-size: 12px;
@@ -99,4 +113,65 @@ input {
     align-items: center;
     justify-content: center;
   }
+}
+.chart-container {
+  margin: 30px;
+  display: flex;
+  align-items: flex-end; /* 아래쪽으로 붙게 */
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  position: relative;
+}
+
+.chart-bar {
+  width: 30px;
+  background-color: #484848;
+  height: 0;
+  margin: 0px 10px;
+}
+.chart-x-axis {
+  position: absolute;
+  bottom: -25px;
+  display: flex;
+  .x-label {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin: 0px 10px;
+  }
+}
+.chart-x-label {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.chart-y-label {
+  position: absolute;
+  top: 0;
+  left: -45px;
+  font-size: 14px;
+}
+
+textarea {
+  width: 97%;
+  resize: none;
+  margin: 10px 12px;
+}
+
+.chart-textarea-fixbtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 12px;
 }
